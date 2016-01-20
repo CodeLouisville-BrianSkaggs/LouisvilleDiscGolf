@@ -1,0 +1,30 @@
+Ideas for Project
+	* Create a website for disc golfers in/near Louisville, which will showcase the courses in the area
+	* Redesign the website for a church frequented by members of my family
+	* Create an application for Texas Holdem poker players, which will calculate odds during a poker hand
+
+Project Chosen: Louisville disc golf website
+
+Requirements Analysis
+	* Target Audience
+		- People interested in playing disc golf in the Louisville area
+		- People who are looking for information on the courses in/near Louisville
+		- People curious about disc golf
+	* Client
+		- There is no client for this project
+		- Potential client: An association that deals with disc golf in Louisville (clubs, leagues, tournament organizers, etc)
+			* Potential goals of client
+				- Attractive design
+				- Easy to use and understand
+				- Consistent and correct course information
+
+Site Map
+	* Main page
+		- Information explaining the website
+		- Course pages - one for each course
+			* Course overview: information and analysis
+			* Hole pages - one for each hole
+				- Hole overview: information and analysis
+		- 'What is Disc Golf?' section
+			* Information for those not familiar or new to disc golf.
+		- Contact section					
