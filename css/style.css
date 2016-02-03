@@ -51,6 +51,7 @@ h1 {
 ul {
     list-style: none;
     display: flex;
+    justify-content: space-around;
     margin: 0;
     padding: 0;
 }
@@ -106,7 +107,27 @@ footer {
     
     .hide1 {
         display: initial;       
-        border-left: 5px solid #0d2911;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .heading {
+	text-align: left;
+    }
+
+    ul {
+	text-align: center;
+    }
+
+    h1 {
+	display: inline-block;
+	font-size: 50px;
+	margin-left: 25px;
+    }
+
+    #logo {
+	margin-left: 25px;
     }
 }
 
@@ -114,10 +135,6 @@ footer {
     
     .header-img {
         width: 33vw;
-    }
-    
-    .hide1 {
-        border: 0;
     }
     
     .hide2 {
@@ -133,12 +150,6 @@ footer {
     
     .hide3 {
         display: initial;        
-    }
-    
-    .hide1,
-    .hide2,
-    .hide3 {
-        border-left: 5px solid #0d2911;
     }
 }
 
