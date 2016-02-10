@@ -18,14 +18,14 @@ body {
 }
 
 #logo {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 }
 
 h1 {
     color: #fff;
     font-size: 35px;
-    margin: 5px 0 10px;
+    margin: 0 0 10px;
     font-family: verdana, arial, sans-serif;
     text-shadow: 3px 3px 8px #0d2911;
 }
@@ -98,6 +98,11 @@ footer {
     color: #fff;
 }
 
+
+/**********************
+    MEDIA QUERIES
+**********************/
+
 @media (min-width: 550px) {    
     
     .header-img {
@@ -113,32 +118,49 @@ footer {
 @media (min-width: 650px) {
 
     .heading {
-	text-align: left;
+	   text-align: left;
     }
 
     ul {
-	text-align: center;
+	   text-align: center;
     }
 
     h1 {
-	display: inline-block;
-	font-size: 50px;
-	margin-left: 25px;
+        display: inline-block;
+        font-size: 50px;
+        margin-left: 25px;
     }
 
     #logo {
-	margin-left: 25px;
+	   margin-left: 25px;
+        height: 55px;
+        width: 55px;
     }
 }
 
 @media (min-width: 950px) {
     
     .header-img {
-        width: 33vw;
+        width: 33.3vw;
     }
     
     .hide2 {
         display: initial;        
+    }
+    
+    #welcome-heading {
+        margin-bottom: 0;
+        font-size: 31px;
+    }
+    
+    #col1 {
+        width: 48%;
+        float: left;
+    }
+    
+    #col2 {
+        width: 48%;
+        float: right;
     }
 }
 
