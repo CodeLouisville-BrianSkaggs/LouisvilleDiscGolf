@@ -3,175 +3,161 @@
 }
 
 body {
-    background-color: #ebf0f4;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;    
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
 }
 
-.heading {
-    width: 100%;
-    background-color: #9f570c;
-    text-align: center;
-    box-shadow: 0px 4px 5px #686d66;
-    padding-top: 20px;
-}
-
-#logo {
-    height: 40px;
-    width: 40px;
-}
-
-h1 {
-    color: #fff;
-    font-size: 35px;
-    margin: 0 0 10px;
-    font-family: verdana, arial, sans-serif;
-    text-shadow: 3px 3px 8px #0d2911;
-}
-
-.header-img-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #0d2911;
-    line-height: 0;    
-}
-
-.header-img {
-    width: 100%;
-    max-height: 185px;
-}
-
-.hide1,
-.hide2,
-.hide3 {
-    display: none;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    flex: 1;    
-    padding: 5px;
-}
-
-li a {
+a {
     text-decoration: none;
-    text-transform: uppercase;
-    color: #82c48c;
-    text-shadow: 1px 1px 4px #0d2911;
-    padding: 0 25px; /* to widen clickable area */
-}
-
-li a:hover {
-    color: #fff;
-}
-
-.selected {
-    color: #fff;
-}
-
-.container {
-    width: 95%;
-    margin: 25px auto;
-    background-color: #fff;
-    padding: 0 15px;
-    color: #691212;
-    flex: 1;
-    box-shadow: 0px 0px 1px #686d66;
-}
-
-h3 {
-    margin-top: 40px;
-}
-
-footer {
-    width: 100%;
-    background-color: #0d2911;
-    text-align: center;
     color: #fff;
 }
 
 
 /**********************
-    MEDIA QUERIES
+HEADER
 **********************/
 
-@media (min-width: 550px) {    
-    
-    .header-img {
-        height: 185px;
-        width: 50vw;
-    }
-    
-    .hide1 {
-        display: initial;       
-    }
+header {
+    background-color: #000;   
+    margin: 0;
+    padding: 5px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@media (min-width: 650px) {
-
-    .heading {
-	   text-align: left;
-    }
-
-    ul {
-	   text-align: center;
-    }
-
-    h1 {
-        display: inline-block;
-        font-size: 50px;
-        margin-left: 25px;
-    }
-
-    #logo {
-	   margin-left: 25px;
-        height: 55px;
-        width: 55px;
-    }
+#logo {
+    width: 50px;
+    height: 50px;
 }
 
-@media (min-width: 950px) {
-    
-    .header-img {
-        width: 33.3vw;
-    }
-    
-    .hide2 {
-        display: initial;        
-    }
-    
-    #welcome-heading {
-        margin-bottom: 0;
-        font-size: 31px;
-    }
-    
-    #col1 {
-        width: 48%;
-        float: left;
-    }
-    
-    #col2 {
-        width: 48%;
-        float: right;
-    }
+header h1 {
+    padding: 0;
+    margin: 0;  
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
 }
 
-@media (min-width: 1450px) {
-    
-    .header-img {
-        width: 25vw;
-    }
-    
-    .hide3 {
-        display: initial;        
-    }
+header ul {
+    padding: 0;
+    margin: 20px 0;   
+    list-style: none;
 }
+
+header li {
+    display: inline-block;
+}
+
+header li a {
+    text-transform: uppercase;
+    font-family: 'Catamaran', sans-serif;
+    background-color: #0e6a0e;
+    padding: 5px 30px;
+    border-radius: 5%;
+    margin-left: 6px;
+}
+
+header li:first-child a {
+    margin: 0;
+}
+
+header li a:hover {
+    color: #0e6a0e;
+    background-color: #fff;
+}
+
+.selected {
+    color: #0e6a0e;
+    background-color: #fff;    
+}
+
+
+/***********************
+HOME PAGE CONTENT
+***********************/
+
+#home-image {
+    flex: 1;
+    background-image: url("../img/basket-sunset.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#temp {
+    flex: 1;
+}
+
+
+/***********************
+FOOTER
+***********************/
+
+footer {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #a7a7a7;
+    background-color: #000;
+    text-align: center;
+    font-size: .75em;
+    font-style: italic;
+}
+
+footer p {
+    margin: 0;
+}
+
+#facebook,
+#twitter {
+    height: 25px;
+    margin: 10px 5px 6px;
+}
+
+#facebook:hover,
+#twitter:hover {
+    height: 27px;
+    margin-top: 8px;
+}
+
+#codelou:hover {
+    font-style: normal;
+}
+
+
+
+
+
+/*************************
+MEDIA QUERIES
+*************************/
+
+@media (min-width: 1000px) {
+    
+    header {
+        flex-direction: row;
+    }
+    
+    header h1 {
+        margin-left: 10px;
+    }
+    
+    header ul {
+        margin-left: auto;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
